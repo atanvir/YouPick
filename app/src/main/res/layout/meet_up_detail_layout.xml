@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:paddingBottom="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/boxLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+
+            android:background="@drawable/round_corner_white"
+            android:paddingTop="32dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:lineSpacingExtra="16sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="Taco Bell"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="25dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="1234 Main Street, Burleson, TX 76028"
+                android:textSize="9sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+
+            <TextView
+                android:id="@+id/cuisineTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:lineSpacingExtra="25dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="MEXICAN"
+                android:textSize="9sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/initTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="-18dp"
+            app:layout_constraintEnd_toEndOf="@+id/boxLayout"
+            app:layout_constraintStart_toStartOf="@+id/boxLayout"
+            app:layout_constraintTop_toTopOf="@+id/boxLayout" />
+        <ImageView
+            android:id="@+id/initTextView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-18dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/profile_dummy"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/initTextView"
+            app:layout_constraintTop_toTopOf="@+id/boxLayout" />
+        <ImageView
+            android:id="@+id/initTextView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-18dp"
+            android:src="@drawable/profile_dummy"
+            android:visibility="gone"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/initTextView"
+            app:layout_constraintTop_toTopOf="@+id/boxLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

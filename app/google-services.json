@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "452656156195",
+    "firebase_url": "https://youpic-7748a.firebaseio.com",
+    "project_id": "youpic-7748a",
+    "storage_bucket": "youpic-7748a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452656156195:android:8c0590a13f964720bdeb96",
+        "android_client_info": {
+          "package_name": "com.youpic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452656156195-2bf8q8g76cnn00m3v9jaqlodanb6515p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.youpic",
+            "certificate_hash": "d229f9c94807247ff48fced8ef7f719a1ff99b22"
+          }
+        },
+        {
+          "client_id": "452656156195-4hv9588fr0dv549bf3t0j2dk00qvsuo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXx5G4Iby-90gi__z_o7_X1ODTTrJBy4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452656156195-4hv9588fr0dv549bf3t0j2dk00qvsuo8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452656156195-4sfmma2rugrtk88pfabmu5h8m8149hb5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.app.YouPick.mobulous"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

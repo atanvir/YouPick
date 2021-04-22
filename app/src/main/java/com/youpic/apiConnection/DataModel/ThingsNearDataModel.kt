@@ -1,0 +1,17 @@
+package com.youpic.apiConnection.DataModel
+
+import com.google.gson.annotations.SerializedName
+
+
+data class ThingsNearDataModel(
+        @SerializedName("data")
+        var `data`: Data,
+        @SerializedName("message")
+        var message: String,
+        @SerializedName("status")
+        var status: String
+) {
+    data class Data(
+            @SerializedName("restaurantList")
+            var restaurantList: List<HomeDataDataModel.Data.Restaurant>
+    )}

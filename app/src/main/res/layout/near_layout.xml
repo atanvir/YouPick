@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="22dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:id="@+id/itemLayout"
+        android:background="@drawable/round_corner_white">
+
+        <TextView
+            android:id="@+id/nearTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Near"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="Me"
+            android:textColor="@color/app_green"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:lines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nearTextView"
+            app:layout_constraintTop_toTopOf="@+id/nearTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

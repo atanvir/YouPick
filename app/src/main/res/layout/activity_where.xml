@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.nearActivity.NearActivity">
+
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/common_titlebar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/searchTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round_corner_white"
+            android:ems="10"
+            android:padding="16dp"
+            android:hint="1234 Main Street"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleBar" />
+
+        <Button
+            android:id="@+id/mile5Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/round_corner_white_stroke_green"
+            android:text="@string/within_5_miles"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/mile20Button"
+            app:layout_constraintEnd_toStartOf="@+id/mile10Button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/searchTextView" />
+
+        <Button
+            android:id="@+id/mile10Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/round_corner_white"
+            android:text="@string/within_10_miles"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/mile5Button"
+            app:layout_constraintEnd_toEndOf="@+id/searchTextView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mile5Button"
+            app:layout_constraintTop_toTopOf="@+id/mile5Button" />
+
+        <Button
+            android:id="@+id/mile20Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/round_corner_white"
+            android:text="@string/within_20_miles"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/view12"
+            app:layout_constraintEnd_toStartOf="@+id/mile40Button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/mile5Button" />
+
+        <Button
+            android:id="@+id/mile40Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAllCaps="false"
+            android:background="@drawable/round_corner_white"
+            android:text="@string/within_40_miles"
+            app:layout_constraintEnd_toEndOf="@+id/mile10Button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mile20Button"
+            app:layout_constraintTop_toTopOf="@+id/mile20Button" />
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/app_grey"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/doneButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:paddingTop="@dimen/button_padding_top"
+            android:paddingBottom="@dimen/button_padding_bottom"
+            android:background="@drawable/round_corner_green2"
+            android:text="Done"
+            android:textSize="17sp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

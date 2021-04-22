@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.youpic">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <queries>
+        <!-- Camera -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <!-- Gallery -->
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent>
+    </queries>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/a_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/a_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".screens.ThankYouActivity"/>
+        <activity android:name=".screens.TakeImageActivity" />
+        <activity android:name=".screens.takeImageOptionActivity.TakeImageOptionActivity" />
+        <activity android:name=".screens.cropActivity.CropActivity" />
+        <activity android:name=".screens.NotiScreenActivity" />
+        <activity android:name=".screens.meetUpDetailActivity.MeetUpDetailActivity" />
+        <activity android:name=".screens.friendRequestActivity.FriendRequestActivity" />
+        <activity android:name=".screens.locationDetailActivity.LocationDetailActivity" />
+        <activity android:name=".screens.pendingActivity.PendingActivity" />
+        <activity android:name=".screens.declineActivity.DeclineActivity" />
+        <activity android:name=".screens.GoodWorkActivity" />
+        <activity android:name=".screens.almostDoneActivity.AlmostDoneActivity" />
+        <activity android:name=".screens.whatActivity.WhatActivity" />
+        <activity android:name=".screens.verificationActivity.VerificationActivity" />
+        <activity android:name=".screens.getResetCodeActivity.GetResetCodeActivity" />
+        <activity android:name=".screens.youPickActivity.YouPickActivity" />
+        <activity android:name=".screens.PasswordUpdatedActivity" />
+        <activity android:name=".screens.newPasswordActivity.NewPasswordActivity" />
+        <activity android:name=".screens.whoActivity.WhoActivity" />
+        <activity android:name=".screens.homeActivity.HomeActivity" />
+        <activity android:name=".screens.WhereActivity" />
+        <activity android:name=".screens.nearActivity.NearActivity" />
+        <activity android:name=".screens.WhenActivity" />
+        <activity android:name=".screens.OccasionActivity" />
+        <activity android:name=".screens.notificationActivity.NotificationActivity" />
+        <activity android:name=".screens.winnerActivity.WinnerActivity" />
+        <activity android:name=".screens.DoneActivity" />
+        <activity android:name=".screens.invitedActivity.InvitedActivity" />
+        <activity android:name=".screens.giveSecActivity.GiveSecActivity" />
+        <activity android:name=".screens.smsVerifyActivity.SmsVerifyActivity" />
+        <activity android:name=".screens.signupActivity.SignUpActivity" />
+        <activity android:name=".screens.loginActivity.LoginActivity" />
+        <activity android:name=".screens.LocationSharingActivity" />
+        <activity android:name=".screens.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="youpick.page.link"
+                    android:scheme="http" />
+                <data
+                    android:host="youpick.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".utils.TakeImage" />
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icn" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="0" />
+    </application>
+
+</manifest>

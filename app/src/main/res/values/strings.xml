@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">YouPick!</string>
+    <string name="map_api_key">AIzaSyD2bx7BsYamzA6NVrWzaKDZwC3Pxe-WndY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="within_5_miles">Within <font fgcolor='#8dc63f'>5</font> miles</string>
+    <string name="within_10_miles">Within <font fgcolor='#8dc63f'>10</font> miles</string>
+    <string name="within_20_miles">Within <font fgcolor='#8dc63f'>20</font> miles</string>
+    <string name="within_40_miles">Within <font fgcolor='#8dc63f'>40</font> miles</string>
+
+</resources>

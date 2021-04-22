@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_padding_top">18dp</dimen>
+    <dimen name="button_padding_bottom">18dp</dimen>
+    <dimen name="button_margin_bottom">20dp</dimen>
+    <dimen name="home_margin_top">-50dp</dimen>
+    <dimen name="home_space_top">50dp</dimen>
+</resources>
